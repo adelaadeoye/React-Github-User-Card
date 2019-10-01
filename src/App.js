@@ -39,7 +39,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="Apps">
         <UserCard data={this.state.user}/>
         {this.state.followers.map(item=>
           <FollowersCard key={item} data={item}/>
