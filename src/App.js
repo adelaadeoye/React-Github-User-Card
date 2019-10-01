@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import UserCard from "./components/UserCard";
-import Followers from "./components/FollowersCard";
 import axios from 'axios'
 import FollowersCard from "./components/FollowersCard";
 
@@ -40,11 +39,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="Apps">
+        <div className="userContainer">
         <UserCard data={this.state.user}/>
+        </div>
+        <div className="followers">
         {this.state.followers.map(item=>
           <FollowersCard key={item} data={item}/>
         )}
-        
+        </div>
       </div>
     );
   }
