@@ -50,8 +50,6 @@ function UserCard(props) {
  
     let str = `${props.data.name}`;
     let acronym = str.split(/\s/).reduce((response,word)=> response+=word.slice(0,1),'')
-    
-    console.log(acronym);
   
   return (
       <div>
